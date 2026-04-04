@@ -115,7 +115,14 @@ with col2:
         if len(st.session_state.messages) == 0:
             with st.spinner("凝神观画中..."):
                 res = v_engine.detect_tags(temp_path)
-                tags = [item['label'] for item in res][:3]
+                try:
+                    if res and isinstance(res, list):
+                    tags = [item['label'] for item in res][:3]
+                    else:
+                        tags = ["风光", "意境", "古韵"] # 如果没识别出来，用通用词兜底
+                except Exception as e:
+                    print(f"识别标签出错: {e}")
+                    tags = ["风光", "意境", "古韵"]
                 st.success(f" 观得意象：{' | '.join(tags)}")
 
             st.divider()
