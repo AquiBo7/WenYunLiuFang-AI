@@ -2,7 +2,6 @@ streamlit
 openai
 pillow
 opencv-python-headless
-cn-clip
 edge-tts
-torch
 transformers
+torch --index-url https://download.pytorch.org/whl/cpu
