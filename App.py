@@ -117,7 +117,7 @@ with col2:
                 res = v_engine.detect_tags(temp_path)
                 try:
                     if res and isinstance(res, list):
-                    tags = [item['label'] for item in res][:3]
+                        tags = [item['label'] for item in res][:3]
                     else:
                         tags = ["风光", "意境", "古韵"] # 如果没识别出来，用通用词兜底
                 except Exception as e:
