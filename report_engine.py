@@ -11,7 +11,7 @@ class ReportEngine:
             pdfmetrics.registerFont(TTFont('CustomFont', font_path))
             self.font_name = 'CustomFont'
         except:
-            self.font_name = 'Helvetica'  # 兜底
+            self.font_name = 'Helvetica'  
 
     def generate_pdf(self, user_data):
 
@@ -35,7 +35,7 @@ class ReportEngine:
 
         y_cursor -= 30
         c.setFont(self.font_name, 14)
-        c.drawString(70, y_cursor, "🏛️ 名家会诊意见：")
+        c.drawString(70, y_cursor, " 名家会诊意见：")
         y_cursor -= 25
         c.setFont(self.font_name, 10)
 
