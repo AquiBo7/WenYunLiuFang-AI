@@ -1,7 +1,0 @@
-streamlit
-openai
-pillow
-opencv-python-headless
-edge-tts
-transformers
-torch --index-url https://download.pytorch.org/whl/cpu
