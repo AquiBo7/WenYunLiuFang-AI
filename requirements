@@ -1,0 +1,10 @@
+streamlit
+openai
+pillow
+opencv-python-headless
+reportlab
+plotly
+pandas
+clip-engine
+torch
+transformers
