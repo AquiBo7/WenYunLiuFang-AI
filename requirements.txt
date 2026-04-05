@@ -5,6 +5,6 @@ opencv-python-headless
 reportlab
 plotly
 pandas
-clip-engine
-torch
 transformers
+torch --index-url https://download.pytorch.org/whl/cpu
+edge-tts
