@@ -340,7 +340,6 @@ with col2:
 
             st.divider()
             st.subheader("名家跨时空评教")
-
             tab1, tab2, tab3 = st.tabs(["苏轼点评", "李清照点评", "王国维点评"])
 
             with tab1:
