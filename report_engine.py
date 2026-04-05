@@ -6,7 +6,7 @@ import io
 
 
 class ReportEngine:
-    def __init__(self, font_path="NotoSerifSC-Regular.otf"):
+    def __init__(self, font_path="NotoSerifSC-Regular.ttf"):
         try:
             pdfmetrics.registerFont(TTFont('CustomFont', font_path))
             self.font_name = 'CustomFont'
