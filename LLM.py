@@ -28,8 +28,8 @@ class LLMEngine:
                     yield content
 
         except Exception as e:
-            print(f"[ERROR] API Link Failed: {e}")
-            yield f"\n推演意境时遇到风浪，请稍后再试... (错误代码: {e})"
+            print(f"API Error: {e}") 
+            yield "网络微漾，请稍后再试。暂荐《江雪》代：千山鸟飞绝，万径人踪灭，孤舟蓑笠翁，独钓寒江雪。————柳宗元"
 
     def chat_with_memory(self, messages, target_phase="初中"):
         sys_msg = {
