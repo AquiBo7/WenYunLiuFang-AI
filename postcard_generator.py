@@ -4,9 +4,8 @@ import streamlit as st
 
 
 class PostcardGenerator:
-    def __init__(self, font_name="Kaiti.ttf"):
+    def __init__(self, font_name="NotoSerifSC-Regular.ttf"):
         try:
-
             self.font = ImageFont.truetype(font_name, 24)
             self.title_font = ImageFont.truetype(font_name, 36, encoding="utf-8")
         except IOError:
